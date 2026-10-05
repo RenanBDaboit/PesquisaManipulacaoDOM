@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #1e293b, #334155);
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+
+    padding: 30px;
+
+    background-color: #ffffff;
+
+    border-radius: 16px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Título */
+
+h1 {
+    margin-bottom: 25px;
+
+    text-align: center;
+
+    color: #1e293b;
+
+    font-size: 32px;
+}
+
+h2 {
+    margin-bottom: 15px;
+
+    color: #334155;
+
+    font-size: 22px;
+}
+
+/* Formulário */
+
+form {
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+label {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    overflow: hidden;
+}
+
+input {
+    flex: 1;
+
+    padding: 12px 15px;
+
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 16px;
+
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #3b82f6;
+}
+
+/* Botão adicionar */
+
+#btn-adicionar {
+    padding: 12px 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #3b82f6;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#btn-adicionar:hover {
+    background-color: #2563eb;
+}
+
+/* Lista */
+
+ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    list-style: none;
+}
+
+/* Tarefa */
+
+.tarefa {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    min-height: 55px;
+
+    padding: 10px 12px;
+
+    background-color: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+
+    color: #1e293b;
+
+    transition: 0.2s;
+}
+
+.tarefa:hover {
+    border-color: #cbd5e1;
+}
+
+/* Texto da tarefa */
+
+.tarefa {
+    font-size: 16px;
+}
+
+/* Botão concluir */
+
+.btn-concluir {
+    margin-left: auto;
+
+    padding: 8px 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #22c55e;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-concluir:hover {
+    background-color: #16a34a;
+}
+
+/* Botão excluir */
+
+.btn-deletar {
+    padding: 8px 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #ef4444;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-deletar:hover {
+    background-color: #dc2626;
+}
+
+/* Tarefa concluída */
+
+.done {
+    color: #64748b;
+
+    text-decoration: line-through;
+
+    opacity: 0.6;
+}
+
+/* Responsividade */
+
+@media (max-width: 500px) {
+
+    main {
+        padding: 20px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    #btn-adicionar {
+        width: 100%;
+    }
+
+    .tarefa {
+        flex-wrap: wrap;
+    }
+
+}
