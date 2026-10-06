@@ -1,21 +1,22 @@
-# 📝 Projeto: Lista de Tarefas Modular
+# Projeto: Lista de Tarefas Modular
 
 **Curso:** Técnico em Informática para a Internet
-**Dupla:** `[Nome do Estudante A]` & `[Nome do Estudante B]`
+
+**Dupla:** Renan e Gustavo
 
 ---
 
-## 📚 Diário de Aprendizagem e Documentação
+## Diário de Aprendizagem e Documentação
 
 Este projeto foi desenvolvido com o objetivo de praticar conceitos de **JavaScript, DOM, eventos, manipulação de elementos, módulos ES6 e integração entre JavaScript e CSS**.
 
 ---
 
-## 1. 🌳 Estrutura do DOM e Seletores
+## 1. Estrutura do DOM e Seletores
 
 ### Conceito de DOM e Nós
 
-**Explicado por:** `[Nome do Estudante A]`
+**Explicado por:** Renan
 
 O **DOM (Document Object Model)** é uma representação do documento HTML em forma de uma árvore de elementos. O navegador transforma o código HTML em objetos que podem ser acessados e modificados pelo JavaScript.
 
@@ -47,7 +48,7 @@ Por meio do DOM, o JavaScript consegue:
 
 ### Métodos de Seleção
 
-**Explicado por:** `[Nome do Estudante B]`
+**Explicado por:** Gustavo
 
 Os seletores são utilizados para localizar elementos dentro do DOM.
 
@@ -85,11 +86,11 @@ Os seletores permitem que o JavaScript encontre os elementos necessários para r
 
 ---
 
-## 2. 🖱️ Eventos e Manipulação de Inputs
+## 2. Eventos e Manipulação de Inputs
 
 ### Escutadores de Eventos e `preventDefault()`
 
-**Explicado por:** `[Nome do Estudante A]`
+**Explicado por:** Renan
 
 O método `addEventListener()` permite que o JavaScript fique observando um determinado evento. Quando o evento acontece, uma função é executada.
 
@@ -117,7 +118,7 @@ Também utilizamos `addEventListener()` nos botões para detectar os cliques do 
 
 ### Captura e Limpeza de Inputs
 
-**Explicado por:** `[Nome do Estudante B]`
+**Explicado por:** Gustavo
 
 A propriedade `.value` permite capturar o conteúdo digitado pelo usuário em um campo `<input>`.
 
@@ -157,11 +158,11 @@ para colocar novamente o cursor no campo e facilitar a criação de uma nova tar
 
 ---
 
-## 3. 🧩 Criação e Remoção Dinâmica de Elementos
+## 3. Criação e Remoção Dinâmica de Elementos
 
 ### Criação de Nós Dinâmicos
 
-**Explicado por:** `[Nome do Estudante A]`
+**Explicado por:** Renan
 
 O método `document.createElement()` permite criar novos elementos HTML através do JavaScript.
 
@@ -211,7 +212,7 @@ li
 
 ### Navegação no DOM e Exclusão
 
-**Explicado por:** `[Nome do Estudante B]`
+**Explicado por:** Gustavo
 
 A propriedade `parentElement` permite acessar o elemento pai de outro elemento.
 
@@ -235,11 +236,11 @@ Dessa maneira, a tarefa é removida da lista sem que seja necessário recarregar
 
 ---
 
-## 4. 📦 Arquitetura Modular e Estilização
+## 4. Arquitetura Modular e Estilização
 
 ### Módulos JavaScript com `import` e `export`
 
-**Explicado por:** `[Nome do Estudante A]`
+**Explicado por:** Renan
 
 Os módulos JavaScript permitem dividir o código em diferentes arquivos, facilitando a organização, manutenção e reutilização das funcionalidades.
 
@@ -273,7 +274,7 @@ Assim, cada arquivo pode ser responsável por uma funcionalidade específica.
 
 ### Integração entre JavaScript e CSS
 
-**Explicado por:** `[Nome do Estudante B]`
+**Explicado por:** Gustavo
 
 O JavaScript pode adicionar, remover ou alternar classes CSS utilizando `classList`.
 
@@ -307,7 +308,7 @@ No projeto, isso é utilizado para marcar uma tarefa como concluída.
 
 ---
 
-## 5. 🚀 Desafio de Extensão
+## 5. Desafio de Extensão
 
 Como extensão do projeto, foi desenvolvido um sistema para marcar tarefas como concluídas.
 
@@ -327,71 +328,7 @@ Após adicionar uma tarefa, o cursor retorna automaticamente para o campo de tex
 
 ---
 
-## 6. 🔄 Funcionamento do Projeto
-
-O funcionamento da aplicação segue o seguinte fluxo:
-
-```text
-Usuário digita uma tarefa
-        ↓
-Clica em "Adicionar"
-        ↓
-Evento submit é acionado
-        ↓
-preventDefault()
-        ↓
-JavaScript captura input.value
-        ↓
-trim() remove espaços desnecessários
-        ↓
-Tarefa é validada
-        ↓
-createElement() cria o <li>
-        ↓
-Botões são criados
-        ↓
-appendChild() monta a tarefa
-        ↓
-Tarefa é adicionada à lista
-        ↓
-input.value = ""
-        ↓
-input.focus()
-```
-
-Depois disso, o usuário pode:
-
-* ✅ **Concluir** uma tarefa;
-* ❌ **Excluir** uma tarefa;
-* ➕ **Adicionar** novas tarefas.
-
----
-
-## 7. 📁 Estrutura dos Arquivos
-
-```text
-lista-de-tarefas/
-│
-├── index.html
-├── style.css
-├── app.js
-├── deletaTarefa.js
-├── concluiTarefa.js
-└── README.md
-```
-
-| Arquivo            | Responsabilidade                |
-| ------------------ | ------------------------------- |
-| `index.html`       | Estrutura da página             |
-| `style.css`        | Estilização da aplicação        |
-| `app.js`           | Controle principal e integração |
-| `deletaTarefa.js`  | Funcionalidade de exclusão      |
-| `concluiTarefa.js` | Funcionalidade de conclusão     |
-| `README.md`        | Documentação do projeto         |
-
----
-
-## 8. 🎯 Conceitos Praticados
+## 6. Conceitos Praticados
 
 Durante o desenvolvimento foram praticados:
 
@@ -419,7 +356,7 @@ Durante o desenvolvimento foram praticados:
 
 ---
 
-## 9. 🏁 Conclusão
+## 7. Conclusão
 
 O desenvolvimento da **Lista de Tarefas Modular** permitiu aplicar conceitos fundamentais de JavaScript para manipulação do DOM.
 
